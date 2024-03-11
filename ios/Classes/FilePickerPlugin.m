@@ -197,6 +197,9 @@
         PHPickerViewController *pickerViewController = [[PHPickerViewController alloc] initWithConfiguration:config];
         pickerViewController.delegate = self;
         pickerViewController.presentationController.delegate = self;
+        // 追加
+        NSLog(@"あばばばば");
+        pickerViewController.photosPickerAccessoryVisibility(.hidden)
         [[self viewControllerWithWindow:nil] presentViewController:pickerViewController animated:YES completion:nil];
         return;
     }
